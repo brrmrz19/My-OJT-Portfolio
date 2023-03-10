@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ojt Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    
+</head>
+<body>
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top " >
+        <div class="container" >
+            <div>
+                <a href="#home" class="navbar-brand text-white font-weight-bold">BR</a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav " >
+                        <li class="nav-item">
+                            <!-- <div class="topBotomBordersIn"> -->
+                            <a href="#home" class="nav-link text-white">Home</a>
+                        <!-- </div> -->
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-white">About</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link text-white">Gallery</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 custom-col" ><br><br><br>
+                    <!-- <ul class="lists-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fas fa-envelop-open-text border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-discord border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-behance border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitch border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                    </ul> -->
+
+                    <img class="stacktrek "src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAAAZCAYAAAAosCIwAAAABHNCSVQICAgIfAhkiAAAC5lJREFUeF7tXE1sXUcVPvOSOolE21QsQGx43nUBwkGgilUcQCxpAkiU50o4gh1KsEWXQB3Bkiq2oy4QQn2WkgcsAIPYsCh9XVRIZVEHkBBQqS9IILHCUSolKfY7fOfOm3f/zsyde99PjOSR+uN778ycOXO+Ob/zDBXbc9ymE/RNPF7CP8uj1/v4717yzyFt0U/NYNzteV6mIZ0vjdPkwZB2cmPLGKt8lv5L7+D/zpKhC3TT9JsMnYzzXkLnRYzTzqyNiJO1DfB8lx6jX1HXyHrLbYW38fB07gXTX6hnrvtoun+93W6dpK9q7xcOaMusD+xcHd7E/B9rtDbpxOCd7FnMGIy1yl4OsdbsXhYnn4QmoadnuliX0FTmj3uvLbjDq+ij8gzrXMe4sl/03svtJR7Ss9oQp64MrjXm5Rw7mtxcHd7Awl+snJ+pCyZcHglOXJ/KQfGBBrA8TTt0y6zGDFVYl/R5cQS8qu772OQNrG+r9GGH72GM9xWevwqaPusb9MGNNoTFlIDFxDtnrgzsWqzAvVJFWPA9kwjcMsapdxgyDp0hhFoDYof7tcdzRAo9PbNBckAzvVai3b0vvrAK4C08Pqv02cKYa+MprrfPPjxJfY2/hrl76urAyugRbikAV7gLOvVTR1uAbFzPXILwzBqAopk+PCbhkBaDp3aWVqv1XkN/0eZ1Wx/a8FJOG9YE4P0b7a4ho/CUb586oOVE+1kNIQI3WWsKQDurHDoXnGYZE/IoALjCot00S+A2DrrSPooWHA4Tq+jJIgOZ+fKZqwOR6yPbLAC/whepRb9sQOU6Nk5Mw2qtGTN4UQPqmiFOC2ZN15i59UNmjxYgmM4krQHA+9vtVWOMptXutlq8vPCNwd7ILH4rUjOHVzEZAC0ID+lc7nCbNwCtySvuT74x3cWD5dIBMfrKy2vm/dYJupDw+og2C8AO72Lhqi1dQfdtAFD6zgqAee1nidmHZlr0+mnyxWSar7j5VtNbPkWZoMmpfCia15TMqNypPImAl4W0mQmaHyd/uE1CX10T1GeqWvrWof02Q7IIUx/vTRm8xHuwNi6Mfe0jBkQLwBXmEl1y6rQQsJCghxXotRzQGMEYscdtEGZZXZcGTKY7+Larfj/Ec+eLhDbE5z+4QUPmtD1Nu1jbbvL5YaLBhX7xw0pmTPLNEKboT8xuDADZ+iXwecrmEiIlW6evDKwPI6anBIT8TehJTW/5LsS7FnyhIXxXzQcUy8I1u17ZS91XfIyeymh83Qe02jbchB6RnRgfMGStMAJFPRPi05gOn799lP3BEABfx8LzwBKTkEhOorUkwlXVdGCXx9XGCZ2+EsXrmUV1euvES9S03GQzFwA0LcppDxnR5nnBlINmAYItfSI0YMjvA/jifVFt/Uxh3vl4dsvkg232ANDBlXUD6oznk4UYAPrmkQNnAf67LypdmFMizuZkEiH9v/EHnQmqmXpy4grQ8tFAEfBQ6DrLlKYADIHIjc90WT0EfH4EkerEl+TGCYNsfgtgzaY9KgAY8vv4gJfOrA8GVWfW+P3sAagHz7J8nQcAV1gsAj2N0yDt9PBG+yKTUeMZ8L3PHTV/0GlA0Wa+vIsIzSZOop3Yk2gsRE0BGBORldxdz5xTAKQfJrHRU6sJN8ZaLztBAICjaJwazTTEl5CXsiZvbHtUAIzRgJKm0dud0qEY0oCUWBx6BLjKzQjwEVbIBqLP5bgE8+AUAk1HyR+0ABSN04JA+3ygVOt04Wdcm6kGtP7Af6LkVDshNdDHar+qST0A5E8sfumh5K6MaReHQL7vGvJ9PoH1zzhLAIZybTEA9FGtmch+AIpl9awnAhxnrYRAuN3uIwqt+Lm8C1fABtWOQEt9A+ffVYFQiLaJ6mpHvIkG9OUVJXhSpK3ooPtyalW+U+xGeAD44JnFdwG+UhQZEc/XkYdajh0+9900AZjVWDbgJL6olugWDZYeInWjoHUAKNFsjQZhQqy1EmCsDYYlFVvlwBrz+umrg2BUtdGeNehUrISRjRGzIB990wYWEzCbI9O+aQbAfQVod/CsjynKZnJ2s0KnbaaCogGfbBcFgE+ffvuNvaXPfUTb6IkSwdMEYOyCi2bfLAEoYPVFYl2EPZZuz3e+gBhC/nfOXHknPWgmnGeS7uXomEs5SKSzWhv2kZ9JQ9xFSuoC0F+StQ5a9tSSJoJv6srTfObrjDXg/WcWb6pJdySCGT5HreCL4+G8AajxaLYAtBaUL4fsUj8NpTsQjEkLIRqOPc1uZQC60VMglvNRWQpCkar6AAwHUDpcnZjXfcB9gPSpiRkXCMIE0g978DnKwaIqYuYLwB0UN6yVgmyhVIVG/xBm5ahQevy6Kg3hLwIpV+ZU8Wz0PklHWJ88XAgROd4sP8sDUECn5VxC/mEoWlUHgP6NShOxfv/QFv5aM9GXPNbTFkXu2rK8VxBsupwk37MtAMBRAr4/tcLgeQLQd4jOIw1hD3oJAJbdHl+kuwIRUQXw2hgd/jno+ELyiunf+PdvIAffRdDxXyhW+ST+flPptopnXZUkGaNnPjiWS6K38ffX8/rL/WUrMyR/IsJcHtAPEH9yuA4A/cDZADMg2Git5BpRmbZsYt6fV9ILjvMAk8Joqdy3J6eU2S0AiJG1oFMtDJ4mANPKFVmfVnKol/fNA4DC51BBek1/MKoA3gdgB0Cm7+CTNnj1NcjAjxPQOACKqU70i/EQhn6Pbz41+vt8AmDpQ/TH5FnPbOfAe4+eoF+be66/ywMWk6GbMNnWc3T6meQvjo4FYEzi3cc099wlkEMnqo28rWFtO7nhrO8ogimRsaLZkgI3phLGV4RdtzB4mgDMVsL4bhu42y35A0m3JrTKGt/+VJmgrl8oIe8ruijMGVUAH5IjB0BDTwNET+BT0Xh/hrx8NANAC0itdfgqACjpldWcjK3wD/DsW0kXAXfPfD8FoM8GF60iF1Q5EVpp4gu2lXn9hbKxAIxJvFcDMC1Pq77dIWvKVsjrYXnLsLswQ5aS3GcEAKXLVAqDZwXAcM43v5d1gzDFPRKgxgJQ+ob8Qe26VGa+UAF8dCFEqgElQvt+DC/R7ZcAphcyABTT9I0RmF6Gm/K7MRkaAJ/jD6E08p8JkO14hPHGrp/BwP5SoCqhl/ehnE0MAKeh/dLjJL0xPw1QWwCmvmMkAEcgBMDLF3GjC4NnBUAhzn9A5QMf8wagtUT6oLB8HzCQ9oougK+S57wJKhHaLyegGdJn4P6I2fgm5CE1QcX8vGX+EARgh7+Ncb6XaD5n1mY0ZHUpWojoKvs8BoDTvNBL2LxsWmRSEBZNnxoAnLgweJYAlD318SYb+Jg3AK0WFGtETF8lgZ75JYaMXE6xAN4GYcQEvWn+ioPq0wDeq4lPZ+iHIwDGm6Cf58fx+wl/R98PoO8qxnkyMVEzKZ9sJYx+GdIPwOqLsVUADF9Dqaq00fOURY1cp8LHrVXMTgbDakRBNTZNVBg8awCGtY2NKj8KAFoQ+n+io3AoPthuQw7U3+S526AA3kVBX8L+/wOUCBjPJ9rL0G8TAIopyfSj8X4z/nZmaNEEXWEpHOmqEBKtin75NIS92yeC7b+ca++kSSmaPnB2tioA+hgdcwfMrznLB0NscYG9KyiF55uedEzUhdwsCxoXBs8agE7b+IqhJTXhu19YZcq593V9wLzsiHz5Lgick3zjDArg0zSE0CJpBEM3YXxeo8ehFbU0hIuSWn7mgzAr/Cc8tSasA6kDJSOS2jNf1BPx4pfJ76hkf0vFIBgj1Sh1fpVMAF1s2WStmBstpSbxAAGgqitPAqoDz2+9hGjULsLGru15/jg25URuSQcA7c/M30IyCRCW+SAdsE5vlYzGGy3RnZ3Yx88qfmh7IHNJ097FAtBd5tb2qWqPQ/s74oMA8HBYlp8TLdo/ateOfCzzV8LEMvn4u2MOHHOgMQeOAdiYdccdjzkwOQf+B5QNAoN67+SxAAAAAElFTkSuQmCC">
+                    <sub class="text-white">INTERN</sub>
+                    <h1 class="display-4 text-white">Hi, I am <b>Bobby</b> Rodrigo Ramirez</h1>
+
+                    <!-- <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Excepturi rerum sit iste beatae nihil reiciendis!</p> -->
+
+                      <!-- <div class="d-flex">
+                        <a href="#porfolio" class="btn btn-outline-dark mr-3 p-2">My Portfolio</a>
+                        <a href="#" class="btn btn-outline-dark px-4"><i class="fas fa-caret-right"></i></a>
+                      </div>   -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="about" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 spacing">
+                    <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/286067904_5522986144431082_6687786260971662704_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_eui2=AeF7e4csFJ6FXJas9LcX-yIpsmC4tnrlrCSyYLi2euWsJI02q1tbZx3-5KivnQ94TkrbnFouNuapVmclQzJoMwbT&_nc_ohc=uaqYg8HH8GEAX_mqN-J&_nc_pt=1&_nc_ht=scontent.fmnl3-3.fna&oh=00_AfAB1ws7k8pcT1IhbQCs0OC7YiZtqjCP3qPQ9MnuLA8g5w&oe=640EDF81" alt="" class="img-fluid img-hero">
+                </div>
+
+                <div class="col-lg-6"><br><br><br><br><br><br>
+                    <h2 class="display-5">About me</h2>
+                    <hr style="border: none; border-top: 2px solid black; height: 1px;">
+                    <p class="lead" style="text-align: justify;">"My name is Bobby Rodrigo Ramirez, and I am from Calamba City, Laguna. Currently, I am studying Bachelor of Science in Information Technology at the University of Perpetual Help System DALTA. I chose BSIT because of my passion for technology. Perhaps, I have always had a strong interest in technology, and I wanted to pursue a degree that would allow me to dive deeper into the field. Additionally, a degree in BSIT can provide a broad skill set that can be applied to various industries, offering flexibility and versatility in my career path."</p>
+
+                        <ul class="lists-inline">
+                        <li class="list-inline-item">
+                            <a href="https://discordapp.com/users/brrmrz19#3409/"><i class="fab fa-discord border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/brrmrz19"><i class="fab fa-github border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <!-- <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-linkin border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram border border-dark rounded-circle p-2"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-youtube border border-dark rounded-circle p-2"></i></a>
+                        </li> -->
+                    </ul>
+
+
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------ -->
+
+      <!-- Services-->
+      <section class="page-section" id="services" style="background-color: black;">
+        <div class="container">
+            <div class="text-center"><br><br><br><br>
+                <!-- <h2 class="section-heading text-uppercase"></h2>
+                <h3 class="section-subheading text-muted">fsdf.</h3> -->
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <!-- <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">fsf</h4>
+                    <p class="text-muted">dasdsad</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">das</h4>
+                    <p class="text-muted"> dasdad.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">daf</h4>
+                    <p class="text-muted">fgdfdgd</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------------- -->
+
+
+          <!-- Portfolio Grid-->
+          <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center"><br><br><br><br>
+                    <h2 class="section-heading text-uppercase">Gallery</h2><br>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-2">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/334983723_1282328342627781_330051040416584001_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGajKESgDjMoZpm3ZgO9vU__Qm2LBvQy_b9CbYsG9DL9v64DSAIrn4pwcroeU9JgTWwP0rt6fnzW2LkRnCZWG7L&_nc_ohc=8GEdcEeI1tsAX-NbitX&_nc_pt=1&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfBKUhIVs6EOQRdX5OZX14ptujFK6BdU7PescdzoqJjkPQ&oe=640E58B9" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-2">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/335021363_610668583752854_7975791634325728511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeHWjPMBGQX-oknWoNjd2GfSF4ngRbovFEQXieBFui8URJHgC0xYg-pZl_Euxn1mJeegalQwdQBAKlcK4fcMWWLb&_nc_ohc=YYKujOPhS0AAX9NRDpt&_nc_pt=1&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfB9f9oj01d9exHxaXsftt4ZofXXPoOBSScSOQeSONXNYA&oe=640F80F9" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/331253042_5883632338389476_6583687459120654724_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeE1BhZKImq-V5uvT3kDAJo8F3f0ZAJzHTQXd_RkAnMdNGoCICqV_IdMsZzxC1PSsFt6a6SCL-jKr9L8hm5DzOdw&_nc_ohc=49eZtt9werkAX-5FPnZ&_nc_pt=1&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfD_NwEmjzvYu6Lokq9yGamMr2_QSwp59h2rVvhddQVVIQ&oe=640E68F4" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-4 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/335017044_8925056127565570_8945303631326292547_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeFjn-slK3UQqWonTfVDsa_c6CJh7phHdrzoImHumEd2vEne2oLQB8Zh9-hYSbKmOv8CMsZQdLmBT5Fk-tyJJyGT&_nc_ohc=jPCMiLdCrHgAX-Ajh_W&_nc_pt=1&_nc_ht=scontent.fmnl3-4.fna&oh=00_AfCZFpcEWE2PrS-i8bJ9GGmSTfmM99aZ2L8AEcn2vuX7IA&oe=640FA509" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/335048403_227469126343730_3198029884696325460_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEZ1SxKoVmchefdgjl----vewYuI6dCuMV7Bi4jp0K4xSq0gLlM4CSTUYR7zp8wbraCDBEyHPtZGZ_qJUGnbIIs&_nc_ohc=iMP4ZYZJLGIAX9SmOmB&_nc_pt=1&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfCJHSj0Vonya-DRSKaneNPTze23XcfLzqw0zAc1AtS7SA&oe=64100C46" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/335068704_200723322562312_8655080758140864612_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGDfafdJcmyFWIjrvCdFIE9oUPsCkQUNMOhQ-wKRBQ0w-a-_Mb_k7d6KJFNJhHtA-luXq3OJC4umCQWcDUQJ-1W&_nc_ohc=y1c5dbnv210AX9-XMdO&_nc_pt=1&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfC1WiCsJ7llq_qhGN_qrbG9A72aVML2QEdAwxxD70xd8Q&oe=640EBFF9" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+</body>
+</html>
